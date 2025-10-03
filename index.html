@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Portfólio</title>
+<style>
+  body {
+    background: #e6f0ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0a1f44;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio {
+    max-width: 700px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(10, 31, 68, 0.15);
+    padding: 30px;
+    text-align: center;
+  }
+
+  .photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 25px auto;
+    border: 5px solid #2a52d8;
+    box-shadow: 0 4px 12px rgba(42, 82, 216, 0.4);
+    transition: transform 0.3s ease;
+  }
+
+  .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .photo:hover {
+    transform: scale(1.05);
+  }
+  
+  ul.skills {
+  list-style: disc;
+  padding-left: 20px;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+  color: #324a7d;
+}
+
+ul.skills li {
+  margin: 8px 0;
+  font-size: 1.05rem;
+}
+
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #1a3c91;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #2a52d8;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #324a7d;
+  }
+
+  ul.sites {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+  }
+
+  ul.sites li {
+    margin: 12px 0;
+  }
+
+  a {
+    color: #2a52d8;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+
+  a:hover {
+    color: #1742b2;
+    text-decoration: underline;
+  }
+
+  .contacts {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+
+  .contact-card {
+    background: #e1e9ff;
+    padding: 15px 25px;
+    border-radius: 12px;
+    min-width: 150px;
+    box-shadow: 0 3px 10px rgba(42, 82, 216, 0.2);
+    transition: background 0.3s ease;
+  }
+
+  .contact-card:hover {
+    background: #2a52d8;
+    color: white;
+    cursor: pointer;
+  }
+
+  .contact-card a {
+    color: inherit;
+  }
+
+  footer {
+    background-color: #2a52d8;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    width: 100%;
+    border-top: 5px solid #1a3c91;
+    font-size: 0.95rem;
+  }
+
+  @media(max-width: 500px) {
+    .contacts {
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact-card {
+      min-width: auto;
+      width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="portfolio">
+    <div class="photo">
+      <img src="shared image.jpg" alt="Minha Foto" />
+    </div>
+    <h1>Olá, eu sou Lavinia Cerri Dos Santos Gomes</h1>
+    <section>
+      <h2>Sobre Mim</h2>
+      <p>
+        Sou desenvolvedora web focada em criar soluções eficientes, funcionais e que gerem impacto positivo. Meus valores incluem comprometimento, ética, aprendizado contínuo e colaboração. Acredito que trabalhar com transparência e responsabilidade é fundamental para construir relações duradouras e projetos de qualidade.
+        <br><br>
+        Meu objetivo é desenvolver produtos digitais que facilitem a vida das pessoas, entregando sempre resultados que superem expectativas. Quero crescer profissionalmente, enfrentando desafios que me permitam inovar e contribuir para o sucesso de empresas e clientes.
+        <br><br>
+        Sou apaixonada por tecnologia, sempre buscando aprender novas ferramentas e técnicas para oferecer soluções modernas, acessíveis e sustentáveis.
+      </p>
+    </section>
+    <section>
+      <h2>Conhecimentos</h2>
+      <ul class="skills">
+        <li>HTML, CSS, PHP e JavaScript</li>
+        <li>Desenvolvimento Front-end e Back-end</li>
+        <li>Interfaces acessíveis e responsivas</li>
+        <li>Versionamento com GitHub</li>
+        <li>VS Code</li>
+        <li>Figma</li>
+        <li>Canva</li>
+        <li>Workbench MySQL e SQL</li>
+        <li>JQuery Mobile e JQuery</li>
+        <li>BootsTrap</li>
+        <li>Google Fonts</li>
+        <li>Aprendizado contínuo e atualização constante</li>
+      </ul>
+    </section>
+    
+    <section>
+      <h2>Meus Sites</h2>
+      <ul class="sites">
+        <li><a href="https://laviniacerri.github.io/Pizzaria-Nostra/" target="_blank" rel="noopener">Pizzaria Nostra</a></li>
+        <li><a href="https://laviniacerri.github.io/Loja-Tec/sobre.html" target="_blank" rel="noopener">Loja Tec</a></li>
+        <li><a href="https://laviniacerri.github.io/Paris/contato.html" target="_blank" rel="noopener">Site Paris</a></li>
+        <li><a href="https://681cfc55030e7.site123.me/" target="_blank" rel="noopener">Capixaba em diversidade</a></li>
+        <li><a href="https://safepointtt.wixsite.com/safepoint" target="_blank" rel="noopener">Abril Verde</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Contatos</h2>
+      <div class="contacts">
+        <div class="contact-card">
+          <strong>Email</strong><br />
+          <a href="mailto:laviniacerri3@gmail.com">laviniacerri3@gmail.com</a>
+        </div>
+        <div class="contact-card">
+          <strong>Telefone</strong><br />
+          <a href="https://wa.me/5527992323679" target="_blank">+55 (27) 99232-3679</a>
+        </div>
+        <div class="contact-card">
+          <strong>Instagram</strong><br />
+          <a href="https://www.instagram.com/lavi_ixz" target="_blank" rel="noopener">@lavi.ixz</a>
+        </div>
+        <div class="contact-card">
+          <strong>Linkedin</strong><br />
+          <a href="https://www.linkedin.com/in/lavinia-cerri-359773387" target="_blank" rel="noopener">linkedin.com/in/lavinia-cerri</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Rodapé -->
+  <footer>
+    © 2025 Portifólio da Lavinia Cerri Dos Santos Gomes. Todos os direitos reservados.
+  </footer>
+</body>
+</html>
